@@ -15,12 +15,15 @@ def send_welcome(message):
 @bot.message_handler(commands=['description'])
 def send_description(message):
     bot.reply_to(message,
-                 "A chat bot using natural language processing (NLP) and Python is a project that involves creating a software program that can simulate human-like conversation with users through a messaging interface. The chat bot uses NLP techniques to understand and respond to the user's messages in a natural way.")
+                 "A chat bot using natural language processing (NLP) and Python is a project that involves creating a "
+                 "software program that can simulate human-like conversation with users through a messaging "
+                 "interface. The chat bot uses NLP techniques to understand and respond to the user's messages in a "
+                 "natural way.")
 
 
 # @bot.message_handler(func=lambda msg: True)
 # def echo_all(message):
-#     bot.reply_to(message, message.text)
+# bot.reply_to(message, message.text)
 
 
 @bot.message_handler(commands=['pic'])
